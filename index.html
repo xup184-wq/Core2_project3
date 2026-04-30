@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentBridge NYC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">RentBridge NYC</h1>
+    <a href="#" class="header-auth-link">Sign up/ Log in</a>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#" data-page-link="home">Home</a>
+    <a href="#" data-page-link="rent">Rent</a>
+    <a href="#" data-page-link="roommate">Roommate</a>
+    <a href="#" data-page-link="posts">Posts</a>
+  </nav>
+
+  <main id="homePage" class="page active">
+    <section class="hero">
+      <div class="home-orbit">
+        <div class="home-side home-side-left">
+          <img src="images/home-collage-1.jpg" alt="Neighborhood exterior" />
+          <img src="images/home-collage-4.jpg" alt="Home office scene" />
+        </div>
+
+        <div class="home-center">
+          <div class="home-hero-card">
+            <div class="home-hero-copy">
+              <span class="home-hero-kicker">RentBridge NYC</span>
+              <h1>Find your NYC home and your next roommate with more ease.</h1>
+            </div>
+
+            <div class="search-band">
+              <div class="search-row">
+                <div class="fake-select" data-type="location">
+                  <span id="locationLabel">Location</span>
+                  <span>˅</span>
+                  <div class="dropdown-panel">
+                    <button type="button" data-value="Manhattan">Manhattan</button>
+                    <button type="button" data-value="Brooklyn">Brooklyn</button>
+                    <button type="button" data-value="Queens">Queens</button>
+                    <button type="button" data-value="LIC">LIC</button>
+                    <button type="button" data-value="Newport">Newport</button>
+                    <button type="button" data-value="Grove St">Grove St</button>
+                    <button type="button" data-value="JSQ">JSQ</button>
+                    <button type="button" data-value="Harrison">Harrison</button>
+                  </div>
+                </div>
+
+                <div class="fake-select" data-type="price">
+                  <span id="priceLabel">Price</span>
+                  <span>˅</span>
+                  <div class="dropdown-panel">
+                    <button type="button" data-value="&lt;$1000">&lt;$1000</button>
+                    <button type="button" data-value="$1000-$1500">$1000-$1500</button>
+                    <button type="button" data-value="$1500-$2000">$1500-$2000</button>
+                    <button type="button" data-value="$2000-$2500">$2000-$2500</button>
+                    <button type="button" data-value="$2500+">$2500+</button>
+                  </div>
+                </div>
+
+                <div class="fake-select" data-type="type">
+                  <span id="typeLabel">Type</span>
+                  <span>˅</span>
+                  <div class="dropdown-panel">
+                    <button type="button" data-value="Studio">Studio</button>
+                    <button type="button" data-value="1B1B">1B1B</button>
+                    <button type="button" data-value="2B2B">2B2B</button>
+                    <button type="button" data-value="Shared">Shared</button>
+                  </div>
+                </div>
+
+                <button id="searchBtn" class="search-btn" type="button">Search</button>
+              </div>
+            </div>
+
+            <p class="home-hero-note">Browse neighborhoods, compare budgets, and start with a search experience that feels a little calmer.</p>
+          </div>
+
+          <div class="home-bottom-strip">
+            <img src="images/home-collage-5.jpg" alt="Pet-friendly living room" />
+            <img src="images/home-collage-6.jpg" alt="Shared kitchen moment" />
+          </div>
+        </div>
+
+        <div class="home-side home-side-right">
+          <img src="images/home-collage-2.jpg" alt="Roommate moment" />
+          <img src="images/home-collage-3.jpg" alt="Sunny dining space" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="rentPage" class="page rent-page">
+    <div class="rent-shell">
+    <div class="rent-filters">
+      <div class="fake-select" data-type="location">
+        <span>All locations</span>
+        <span>˅</span>
+        <div class="dropdown-panel">
+          <button type="button" data-value="Manhattan">Manhattan</button>
+          <button type="button" data-value="Brooklyn">Brooklyn</button>
+          <button type="button" data-value="Queens">Queens</button>
+          <button type="button" data-value="LIC">LIC</button>
+          <button type="button" data-value="Newport">Newport</button>
+          <button type="button" data-value="Grove St">Grove St</button>
+          <button type="button" data-value="JSQ">JSQ</button>
+          <button type="button" data-value="Harrison">Harrison</button>
+        </div>
+      </div>
+
+      <div class="fake-select" data-type="price">
+        <span>Any budget</span>
+        <span>˅</span>
+        <div class="dropdown-panel">
+          <button type="button" data-value="<$1500"><$1500</button>
+          <button type="button" data-value="$1500-$2000">$1500-$2000</button>
+          <button type="button" data-value="$2000-$2500">$2000-$2500</button>
+          <button type="button" data-value="$2500-$3000">$2500-$3000</button>
+          <button type="button" data-value="$3000+">$3000+</button>
+        </div>
+      </div>
+
+      <div class="fake-select" data-type="type">
+        <span>Any type</span>
+        <span>˅</span>
+        <div class="dropdown-panel">
+          <button type="button" data-value="Studio">Studio</button>
+          <button type="button" data-value="1B1B">1B1B</button>
+          <button type="button" data-value="2B2B">2B2B</button>
+          <button type="button" data-value="Shared">Shared</button>
+        </div>
+      </div>
+
+      <button id="rentSearchBtn" class="rent-search-btn" type="button">Search</button>
+    </div>
+
+    <div class="rent-grid">
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-1.png')">
+        <h3>Columbus Circle Studio</h3>
+        <p class="card-meta">Manhattan • Studio</p>
+        <div class="price">$3200/month</div>
+        <p class="card-desc">Near subway, furnished, good for one student, official building application page.</p>
+        <div class="tag-row">
+          <span class="tag">Manhattan</span>
+          <span class="tag">Studio</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-2.png')">
+        <h3>LIC Student-friendly 1B1B</h3>
+        <p class="card-meta">LIC • 1B1B</p>
+        <div class="price">$2900/month</div>
+        <p class="card-desc">Close to train, modern building, laundry in building, easy commute to Manhattan.</p>
+        <div class="tag-row">
+          <span class="tag">LIC</span>
+          <span class="tag">1B1B</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-3.png')">
+        <h3>Shared Room near Grove St</h3>
+        <p class="card-meta">Grove St • Shared</p>
+        <div class="price">$1450/month</div>
+        <p class="card-desc">Budget-friendly shared apartment, close to PATH, popular with students.</p>
+        <div class="tag-row">
+          <span class="tag">Grove St</span>
+          <span class="tag">Shared</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-1.png')">
+        <h3>Newport High-rise Apartment</h3>
+        <p class="card-meta">Newport • Studio</p>
+        <div class="price">$2750/month</div>
+        <p class="card-desc">Waterfront area, safe environment, many international students nearby.</p>
+        <div class="tag-row">
+          <span class="tag">Newport</span>
+          <span class="tag">Studio</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-2.png')">
+        <h3>JSQ Shared 2B2B</h3>
+        <p class="card-meta">JSQ • Shared</p>
+        <div class="price">$1600/month</div>
+        <p class="card-desc">Near transportation, lower budget, suitable for roommate matching.</p>
+        <div class="tag-row">
+          <span class="tag">JSQ</span>
+          <span class="tag">Shared</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+
+      <article class="card rent-card" style="--floorplan-image:url('images/floorplan-3.png')">
+        <h3>Harrison New Building Unit</h3>
+        <p class="card-meta">Harrison • 1B1B</p>
+        <div class="price">$2300/month</div>
+        <p class="card-desc">New building, quiet area, good for students who prefer calm surroundings.</p>
+        <div class="tag-row">
+          <span class="tag">Harrison</span>
+          <span class="tag">1B1B</span>
+        </div>
+        <div class="button-row">
+          <button class="pink-btn detail-btn" type="button">Details</button>
+        </div>
+      </article>
+    </div>
+    </div>
+  </section>
+
+
+  <section id="roommatePage" class="page roommate-page">
+    <div class="roommate-shell">
+    <div class="roommate-intro">
+      <h2 class="roommate-title">Find your roommate here</h2>
+      <p class="roommate-copy">Choose the preferences that matter to you, compare roommate profiles, and keep everything in one calm, organized place.</p>
+    </div>
+
+    <form class="roommate-form" id="roommatePreferenceForm">
+      <div class="roommate-form-grid">
+        <div class="preference-column">
+          <div class="preference-group">
+            <h3 class="preference-title">Preferred Area</h3>
+            <div class="fake-select roommate-dropdown school-dropdown" data-type="preferred-area" aria-label="Preferred area">
+              <span>Any area</span>
+              <span>˅</span>
+              <div class="dropdown-panel">
+                <button type="button" class="selected" data-value="Any area">Any area</button>
+                <button type="button" data-value="Manhattan">Manhattan</button>
+                <button type="button" data-value="Brooklyn">Brooklyn</button>
+                <button type="button" data-value="Queens">Queens</button>
+                <button type="button" data-value="LIC">LIC</button>
+                <button type="button" data-value="Newport">Newport</button>
+                <button type="button" data-value="Grove St">Grove St</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Budget $</h3>
+            <div class="roommate-row">
+              <input class="roommate-field budget-field" type="number" name="budgetMin" placeholder="min" min="0" />
+              <span class="range-label">to</span>
+              <input class="roommate-field budget-field" type="number" name="budgetMax" placeholder="max" min="0" />
+            </div>
+            <div class="roommate-row">
+              <label class="preference-option"><input type="checkbox" name="budgetPeriod" value="weekly" /> weekly</label>
+              <label class="preference-option"><input type="checkbox" name="budgetPeriod" value="monthly" checked /> monthly</label>
+            </div>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">To move in</h3>
+            <label class="preference-option"><input type="checkbox" name="moveIn" value="anytime" checked /> Anytime</label>
+            <div class="roommate-row move-date-row">
+              <label class="preference-option"><input type="checkbox" name="moveIn" value="date" /></label>
+              <div class="fake-select roommate-dropdown date-dropdown" data-type="move-month" aria-label="Move-in month">
+                <span>04</span>
+                <span>˅</span>
+                <div class="dropdown-panel">
+                  <button type="button" class="selected" data-value="04">04</button>
+                  <button type="button" data-value="05">05</button>
+                  <button type="button" data-value="06">06</button>
+                  <button type="button" data-value="07">07</button>
+                  <button type="button" data-value="08">08</button>
+                  <button type="button" data-value="09">09</button>
+                  <button type="button" data-value="10">10</button>
+                  <button type="button" data-value="11">11</button>
+                  <button type="button" data-value="12">12</button>
+                </div>
+              </div>
+              <div class="fake-select roommate-dropdown date-dropdown" data-type="move-day" aria-label="Move-in day">
+                <span>16</span>
+                <span>˅</span>
+                <div class="dropdown-panel">
+                  <button type="button" class="selected" data-value="16">16</button>
+                  <button type="button" data-value="17">17</button>
+                  <button type="button" data-value="18">18</button>
+                  <button type="button" data-value="19">19</button>
+                  <button type="button" data-value="20">20</button>
+                  <button type="button" data-value="21">21</button>
+                  <button type="button" data-value="22">22</button>
+                  <button type="button" data-value="23">23</button>
+                  <button type="button" data-value="24">24</button>
+                </div>
+              </div>
+              <div class="fake-select roommate-dropdown year-dropdown" data-type="move-year" aria-label="Move-in year">
+                <span>2026</span>
+                <span>˅</span>
+                <div class="dropdown-panel">
+                  <button type="button" class="selected" data-value="2026">2026</button>
+                  <button type="button" data-value="2027">2027</button>
+                  <button type="button" data-value="2028">2028</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Length of stay</h3>
+            <div class="stay-row">
+              <span class="inline-label">Minimum:</span>
+              <div class="fake-select roommate-dropdown stay-dropdown" data-type="stay-min">
+                <span>Any</span>
+                <span>˅</span>
+                <div class="dropdown-panel">
+                  <button type="button" class="selected" data-value="Any">Any</button>
+                  <button type="button" data-value="1 month">1 month</button>
+                  <button type="button" data-value="3 months">3 months</button>
+                  <button type="button" data-value="6 months">6 months</button>
+                  <button type="button" data-value="12 months">12 months</button>
+                </div>
+              </div>
+              <span class="inline-label">Maximum:</span>
+              <div class="fake-select roommate-dropdown stay-dropdown" data-type="stay-max">
+                <span>Any</span>
+                <span>˅</span>
+                <div class="dropdown-panel">
+                  <button type="button" class="selected" data-value="Any">Any</button>
+                  <button type="button" data-value="3 months">3 months</button>
+                  <button type="button" data-value="6 months">6 months</button>
+                  <button type="button" data-value="12 months">12 months</button>
+                  <button type="button" data-value="24 months">24 months</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">School</h3>
+            <div class="fake-select roommate-dropdown school-dropdown" data-type="school" aria-label="Preferred school">
+              <span>Any school</span>
+              <span>˅</span>
+              <div class="dropdown-panel">
+                <button type="button" class="selected" data-value="Any school">Any school</button>
+                <button type="button" data-value="Working professional">Working professional</button>
+                <button type="button" data-value="NYU">NYU</button>
+                <button type="button" data-value="Parsons">Parsons</button>
+                <button type="button" data-value="SVA">SVA</button>
+                <button type="button" data-value="Pratt">Pratt</button>
+                <button type="button" data-value="Columbia">Columbia</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="preference-column">
+          <div class="preference-group">
+            <h3 class="preference-title">Required availabilty</h3>
+            <label class="preference-option"><input type="checkbox" name="availability" value="all" checked /> All Periods</label>
+            <label class="preference-option"><input type="checkbox" name="availability" value="7days" /> 7 days per week</label>
+            <label class="preference-option"><input type="checkbox" name="availability" value="weekday" /> Mon to Fri only</label>
+            <label class="preference-option"><input type="checkbox" name="availability" value="weekend" /> Weekends only</label>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Required room amenities</h3>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="any" checked /> Any room setup</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="large" /> Large room</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="small" /> Small room</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="private-bathroom" /> Private bathroom</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="furnished" /> Furnished room</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="two-room" /> 2-bedroom apartment</label>
+            <label class="preference-option"><input type="checkbox" name="roomAmenities" value="three-plus-room" /> 3+ bedroom apartment</label>
+          </div>
+
+        </div>
+
+        <div class="preference-column">
+          <div class="preference-group">
+            <h3 class="preference-title">Happy to share with</h3>
+            <label class="preference-option"><input type="checkbox" name="shareGender" value="female" checked /> Female</label>
+            <label class="preference-option"><input type="checkbox" name="shareGender" value="male" /> Male</label>
+            <label class="preference-option"><input type="checkbox" name="shareGender" value="non-binary" /> Non-binary</label>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Sleep</h3>
+            <label class="preference-option"><input type="checkbox" name="sleep" value="early" /> Early sleeper</label>
+            <label class="preference-option"><input type="checkbox" name="sleep" value="night" /> Night owl</label>
+            <label class="preference-option"><input type="checkbox" name="sleep" value="flexible" checked /> Flexible</label>
+            <label class="preference-option"><input type="checkbox" name="sleep" value="regular" /> Regular schedule</label>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Couples?</h3>
+            <label class="preference-option"><input type="checkbox" name="couples" value="any" checked /> Don't mind</label>
+            <label class="preference-option"><input type="checkbox" name="couples" value="no" /> No couples</label>
+          </div>
+
+        </div>
+
+        <div class="preference-column">
+          <div class="preference-group">
+            <h3 class="preference-title">Cleanliness</h3>
+            <label class="preference-option"><input type="checkbox" name="cleanliness" value="clean" /> Clean</label>
+            <label class="preference-option"><input type="checkbox" name="cleanliness" value="moderate" checked /> Moderate</label>
+            <label class="preference-option"><input type="checkbox" name="cleanliness" value="very-clean" /> Very clean</label>
+            <label class="preference-option"><input type="checkbox" name="cleanliness" value="not-clean" /> Not clean</label>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Required property preferences</h3>
+                        <label class="preference-option"><input type="checkbox" name="smoking" value="smoking" /> Smoking</label>
+            <label class="preference-option"><input type="checkbox" name="smoking" value="non-smoking" /> Non-smoking</label>
+            <label class="preference-option"><input type="checkbox" name="pets" /> Pets considered</label>
+            <label class="preference-option"><input type="checkbox" name="lgbtPreference" /> LGBT-friendly</label>
+          </div>
+
+          <div class="preference-group">
+            <h3 class="preference-title">Age range</h3>
+            <div class="roommate-row">
+              <input class="roommate-field age-field" type="number" name="ageMin" placeholder="min" min="18" />
+              <span class="range-label">to</span>
+              <input class="roommate-field age-field" type="number" name="ageMax" placeholder="max" min="18" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="roommate-actions">
+        <button class="rent-search-btn roommate-save-btn" id="saveRoommatePreferenceBtn" type="button">Save and upload your information</button>
+        <button class="rent-search-btn roommate-search-btn" id="roommateSearchBtn" type="submit">Search</button>
+      </div>
+    </form>
+
+    <div class="roommate-results" id="roommateResults">
+      <div class="rent-grid" id="roommateCardsGrid"></div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <section id="roommatePostPage" class="page roommate-post-page">
+    <div class="roommate-post-wrap">
+      <div class="button-row roommate-post-back">
+        <button id="backFromRoommatePostBtn" class="back-btn" type="button">Back</button>
+      </div>
+
+      <h2 class="roommate-post-title">Create your card</h2>
+      <p class="roommate-post-copy">Add your basic details, write a clear introduction, and shape a profile that feels consistent with the rest of the site.</p>
+
+      <form id="roommatePostForm" class="roommate-post-form">
+        <div class="roommate-post-grid">
+          <div class="roommate-post-field full">
+            <label for="postPhotoFile">Upload Photo</label>
+            <input id="postPhotoFile" name="postPhotoFile" type="file" accept="image/*" />
+          </div>
+          <div class="roommate-post-field">
+            <label for="postName">Name</label>
+            <input id="postName" name="postName" type="text" placeholder="Your name" required />
+          </div>
+          <div class="roommate-post-field">
+            <label for="postAge">Age</label>
+            <input id="postAge" name="postAge" type="number" min="18" max="99" placeholder="Your age" required />
+          </div>
+          <div class="roommate-post-field full">
+            <label for="postIntro">Self-introduction</label>
+            <textarea id="postIntro" name="postIntro" placeholder="Write a short self-introduction..." required></textarea>
+          </div>
+          <div class="roommate-post-field full">
+            <label for="postDescription">Description</label>
+            <textarea id="postDescription" name="postDescription" placeholder="Describe your roommate preferences, lifestyle, or anything you want others to know..." required></textarea>
+          </div>
+          <div class="roommate-post-field full">
+            <label for="postPhone">Phone number</label>
+            <input id="postPhone" name="postPhone" type="text" placeholder="Phone number" required />
+          </div>
+          <div class="roommate-post-field full">
+            <label for="postEmail">Email</label>
+            <input id="postEmail" name="postEmail" type="email" placeholder="Email" required />
+          </div>
+        </div>
+
+        <div class="roommate-post-actions">
+          <button class="rent-search-btn roommate-save-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <section id="roommateDetailPage" class="page roommate-detail-page">
+    <div class="roommate-detail-wrap">
+      <div class="button-row roommate-detail-back">
+        <button id="backToRoommateBtn" class="back-btn" type="button">Back</button>
+      </div>
+
+      <div class="roommate-detail-layout">
+        <div class="roommate-detail-side">
+          <img id="roommateDetailPhoto" class="roommate-detail-photo" src="" alt="Roommate portrait" />
+          <div class="roommate-contact">
+            <p id="roommateDetailPhone"></p>
+            <p id="roommateDetailEmail"></p>
+          </div>
+        </div>
+
+        <div class="roommate-detail-main">
+          <div class="roommate-detail-copy">
+            <section>
+              <h3>About Me</h3>
+              <p id="roommateDetailIntro"></p>
+            </section>
+            <section>
+              <h3>Description</h3>
+              <p id="roommateDetailDescription"></p>
+            </section>
+          </div>
+          <div id="roommateDetailTable" class="roommate-detail-table"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="postsCreatePage" class="page posts-create-page">
+    <div class="posts-create-wrap">
+      <div class="button-row posts-create-back">
+        <button id="backFromPostsCreateBtn" class="back-btn" type="button">Back</button>
+      </div>
+
+      <h2 class="posts-create-title">Create a Post</h2>
+      <p class="posts-create-copy">Start a conversation about rent, roommates, neighborhoods, paperwork, or anything else students and renters might need help with.</p>
+
+      <form id="postsCreateForm" class="posts-create-form">
+        <div class="posts-create-grid">
+          <div class="posts-create-field">
+            <label for="postsCreateName">Nickname</label>
+            <input id="postsCreateName" name="postsCreateName" type="text" placeholder="Your nickname" required />
+          </div>
+          <div class="posts-create-field full">
+            <label for="postsCreateSubject">Subject</label>
+            <input id="postsCreateSubject" name="postsCreateSubject" type="text" placeholder="Write a clear subject line" required />
+          </div>
+          <div class="posts-create-field full">
+            <label for="postsCreateBody">Post</label>
+            <textarea id="postsCreateBody" name="postsCreateBody" placeholder="Share your question, story, or advice here..." required></textarea>
+          </div>
+        </div>
+
+        <div class="posts-create-actions">
+          <button class="pink-btn" type="submit">Post</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="postsPage" class="page posts-page">
+    <div class="posts-wrap">
+      <div class="posts-topbar">
+        <button id="createPostBtn" class="pink-btn posts-create-btn" type="button">Create a Post</button>
+      </div>
+      <div id="postsList" class="posts-list"></div>
+    </div>
+  </section>
+
+  <section id="postDetailPage" class="page post-detail-page">
+    <div class="post-detail-wrap">
+      <div class="post-detail-back">
+        <button id="backToPostsBtn" class="back-btn" type="button">Back</button>
+      </div>
+      <div class="post-detail-head">
+        <div id="postDetailName" class="post-detail-name"></div>
+        <h2 id="postDetailTitle" class="post-detail-title"></h2>
+      </div>
+      <div id="postDetailMeta" class="post-detail-meta"></div>
+      <div id="postDetailBody" class="post-detail-body"></div>
+            <div class="post-reply-box">
+        <div class="post-reply-row">
+          <input id="postReplyInput" class="post-reply-line" type="text" placeholder="Reply" />
+        </div>
+        <button id="postSendBtn" class="back-btn post-send-btn" type="button">Send</button>
+      </div>
+      <h3 class="post-comments-title">Comments</h3>
+      <div id="postCommentsList" class="post-comments-list"></div>
+    </div>
+  </section>
+
+<section id="detailPage" class="page detail-page">
+    <div class="detail-shell">
+    <div class="button-row detail-back-row">
+      <button id="backToRentBtn" class="back-btn" type="button">Back</button>
+    </div>
+    <div class="detail-layout">
+      <div>
+        <div class="detail-gallery">
+          <img id="detailHeroImage" class="detail-hero-image" src="" alt="Apartment interior view" />
+          <div class="detail-thumb-row">
+            <img id="detailThumb1" class="detail-thumb" src="" alt="Gallery image 1" />
+            <img id="detailThumb2" class="detail-thumb" src="" alt="Gallery image 2" />
+            <img id="detailThumb3" class="detail-thumb" src="" alt="Gallery image 3" />
+            <img id="detailThumb4" class="detail-thumb detail-floorplan-thumb" src="" alt="Floor plan image" />
+          </div>
+        </div>
+
+        <div class="detail-bottom">
+          <div class="detail-location">
+            <h3 class="detail-section-title">Location &amp; Building</h3>
+            <div id="detailLocation" class="location-box"></div>
+          </div>
+          <div class="detail-features-section">
+            <h3 class="detail-section-title">Home features</h3>
+            <div id="detailHomeFeatures" class="detail-feature-grid"></div>
+          </div>
+          <div class="detail-features-section">
+            <h3 class="detail-section-title">Building amenities</h3>
+            <div id="detailBuildingAmenities" class="detail-amenity-groups"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-info">
+        <h2 id="detailTitle"></h2>
+        <p id="detailSubtitle" class="detail-subtitle"></p>
+        <div id="detailPrice" class="detail-price"></div>
+        <p id="detailDescription" class="detail-description"></p>
+        <div class="tag-row" id="detailTags"></div>
+        <div id="detailStatusGrid" class="detail-status-grid"></div>
+        <h3 class="detail-section-title">Apartment Information</h3>
+        <div id="detailInfoList" class="detail-facts"></div>
+        <div class="button-row" style="margin-top: 8px;">
+          <button id="requestTourBtn" class="pink-btn" type="button">Request a tour</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
